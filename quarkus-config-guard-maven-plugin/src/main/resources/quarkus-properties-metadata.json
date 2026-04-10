@@ -1,0 +1,70 @@
+{
+  "_comment": "Quarkus property metadata registry. buildTime=true means the property is fixed at build/augmentation time.",
+
+  "quarkus.application.name": { "buildTime": true, "description": "The name of the application." },
+  "quarkus.application.version": { "buildTime": true, "description": "The version of the application." },
+
+  "quarkus.arc.remove-unused-beans": { "buildTime": true, "description": "If set to true, the build will remove beans not reachable from any injection point." },
+  "quarkus.arc.auto-inject-fields": { "buildTime": true, "description": "If enabled, Arc will attempt to auto-inject fields." },
+
+  "quarkus.datasource.db-kind": { "buildTime": true, "description": "The kind of database to connect to (e.g. postgresql, mysql)." },
+  "quarkus.datasource.devservices.enabled": { "buildTime": true, "description": "Whether to enable DevServices for this datasource." },
+
+  "quarkus.hibernate-orm.database.generation": { "buildTime": false, "description": "Select whether the database schema is generated or validated by Hibernate ORM." },
+  "quarkus.hibernate-orm.dialect": { "buildTime": true, "description": "The Hibernate ORM dialect class name." },
+  "quarkus.hibernate-orm.physical-naming-strategy": { "buildTime": true, "description": "Class name of the physical naming strategy." },
+
+  "quarkus.http.port": { "buildTime": false, "description": "The HTTP port." },
+  "quarkus.http.ssl-port": { "buildTime": false, "description": "The HTTPS port." },
+  "quarkus.http.host": { "buildTime": false, "description": "The HTTP host." },
+  "quarkus.http.cors": { "buildTime": false, "description": "Enable the CORS filter." },
+  "quarkus.http.cors.origins": { "buildTime": false, "description": "CORS origins." },
+
+  "quarkus.index-dependency.*": { "buildTime": true, "description": "Additional indexed dependencies." },
+
+  "quarkus.log.level": { "buildTime": false, "description": "The default log level." },
+  "quarkus.log.console.enable": { "buildTime": false, "description": "If console logging should be enabled." },
+  "quarkus.log.console.format": { "buildTime": false, "description": "The format of console log messages." },
+  "quarkus.log.file.enable": { "buildTime": false, "description": "If file logging should be enabled." },
+
+  "quarkus.native.resources.includes": { "buildTime": true, "description": "Resources to include in native image." },
+  "quarkus.native.resources.excludes": { "buildTime": true, "description": "Resources to exclude from native image." },
+
+  "quarkus.otel.enabled": { "buildTime": true, "description": "Whether OpenTelemetry is enabled globally." },
+  "quarkus.otel.exporter.otlp.enabled": { "buildTime": true, "description": "Whether the OTLP exporter is enabled." },
+  "quarkus.otel.exporter.otlp.endpoint": { "buildTime": false, "description": "The OTLP endpoint to send traces to." },
+  "quarkus.otel.exporter.otlp.headers": { "buildTime": false, "description": "Key-value pairs to add as headers on every request to the collector." },
+  "quarkus.otel.traces.enabled": { "buildTime": true, "description": "Whether tracing is enabled." },
+  "quarkus.otel.metrics.enabled": { "buildTime": true, "description": "Whether metrics are enabled." },
+  "quarkus.otel.logs.enabled": { "buildTime": true, "description": "Whether log exporting is enabled." },
+
+  "quarkus.package.type": { "buildTime": true, "description": "The requested output type." },
+  "quarkus.package.uber-jar": { "buildTime": true, "description": "Whether to build an uber-jar." },
+  "quarkus.package.compress-jar": { "buildTime": true, "description": "Whether to compress the resulting jars." },
+  "quarkus.package.add-runner-suffix": { "buildTime": true, "description": "Whether to add the -runner suffix to the produced jar." },
+
+  "quarkus.quartz.clustered": { "buildTime": true, "description": "Whether to enable clustering." },
+
+  "quarkus.rest-client.*": { "buildTime": false, "description": "REST client configuration." },
+  "quarkus.rest-client.\"*\".url": { "buildTime": false, "description": "REST client base URL." },
+
+  "quarkus.scheduler.enabled": { "buildTime": true, "description": "Whether the scheduler is enabled." },
+
+  "quarkus.security.jaxrs.deny-unannotated-endpoints": { "buildTime": true, "description": "Denies access to all JAX-RS resources if no security annotation is declared." },
+
+  "quarkus.smallrye-graphql.schema-available": { "buildTime": true, "description": "Make the schema available over HTTP." },
+
+  "quarkus.swagger-ui.enable": { "buildTime": true, "description": "Whether Swagger UI should be included in the application." },
+  "quarkus.swagger-ui.always-include": { "buildTime": true, "description": "Whether to always include Swagger UI regardless of the profile." },
+  "quarkus.swagger-ui.path": { "buildTime": true, "description": "The path where Swagger UI is available." },
+
+  "quarkus.transaction-manager.default-transaction-timeout": { "buildTime": false, "description": "The default transaction timeout." },
+
+  "quarkus.vertx.caching": { "buildTime": true, "description": "Whether to cache or not." },
+  "quarkus.vertx.classpath-resolving": { "buildTime": true, "description": "Whether classpath resources should be resolved." },
+
+  "quarkus.redis.devservices.enabled": { "buildTime": true, "description": "Whether to enable DevServices for Redis." },
+  "quarkus.mongodb.devservices.enabled": { "buildTime": true, "description": "Whether to enable DevServices for MongoDB." },
+  "quarkus.kafka.devservices.enabled": { "buildTime": true, "description": "Whether to enable DevServices for Kafka." },
+  "quarkus.kafka.devservices.topic-partitions": { "buildTime": true, "description": "DevServices Kafka topic partition configuration." }
+}
