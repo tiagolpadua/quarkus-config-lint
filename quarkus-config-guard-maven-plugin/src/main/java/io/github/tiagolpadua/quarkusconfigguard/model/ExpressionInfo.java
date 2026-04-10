@@ -24,7 +24,7 @@ public class ExpressionInfo {
         this.fullExpression = fullExpression;
         this.variableName = variableName;
         this.defaultValue = defaultValue;
-        this.environmentVariable = variableName != null && variableName.matches("[A-Z][A-Z0-9_]*");
+        this.environmentVariable = variableName != null && variableName.matches("[A-Z_][A-Z0-9_]+");
         this.propertyReference = variableName != null && (variableName.contains(".") || variableName.matches(".*[a-z].*"));
     }
 

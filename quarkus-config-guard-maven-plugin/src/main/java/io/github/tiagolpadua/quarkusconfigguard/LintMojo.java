@@ -75,7 +75,7 @@ public class LintMojo extends AbstractMojo {
     /**
      * Base directory for resource files (defaults to src/main/resources).
      */
-    @Parameter(defaultValue = "${project.build.sourceDirectory}/../resources/main")
+    @Parameter(defaultValue = "${project.basedir}/src/main/resources")
     private File resourcesDirectory;
 
     @Override
